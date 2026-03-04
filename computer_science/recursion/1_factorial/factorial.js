@@ -1,6 +1,6 @@
 const factorial = function(n) {
-  if (n < 0) {
-    return
+  if (n <= 0) {
+    return 'Please, insert a positive integer number'
   } else if (n == 1) {
     return 1
   } else {
@@ -8,7 +8,7 @@ const factorial = function(n) {
   }
 };
 
-console.log(factorial(-1));
+console.log(factorial(0));
 
 // Do not edit below this line
 module.exports = factorial;
